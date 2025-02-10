@@ -1,39 +1,25 @@
-/* General Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
-    gap: 20px; /* Adds space between the two containers */
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Main Container */
-.container {
-    background: white;
-    padding: 20px;
-    width: 600px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading */
-h2 {
-    margin-bottom: 15px;
-}
-
-/* Content Layout */
-.content {
+/* Wrapper for both sections */
+.main-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 150px; /* Adjusted spacing to match previous format */
 }
 
-/* Photos Container (Styled to match the second layout) */
+/* Photos Container */
 .photos-container {
     display: flex;
     flex-direction: column;
@@ -42,46 +28,56 @@ h2 {
     background-color: white;
     border: 2px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 540px; 
-    width: 170px; 
+    height: 540px;
+    width: 170px;
     overflow: hidden;
 }
 
-/* Photos Layout */
-#photos {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-/* Ensures images display properly */
+/* Image Styling */
 #photos img {
     width: 100%;
-    height: auto;
     max-width: 170px;
     max-height: 150px;
     object-fit: cover;
     border: 1px solid black;
 }
 
-/* Caption Styling */
-#photo-caption {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    max-width: 90%;
-}
-
-/* Caption Input + Submit Button */
-.caption-box {
-    width: 50%;
+/* Text & Caption Container */
+.text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 20px;
 }
 
+/* Heading Styling */
+h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.instructions {
+    text-align: left;
+    font-size: 0.8em;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+/* Caption Box */
+.caption-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Caption Input */
 textarea {
     width: 90%;
     height: 50px;
@@ -92,19 +88,55 @@ textarea {
     text-align: center;
 }
 
-/* Buttons */
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center when there's one button */
+    gap: 10px; 
+    margin-top: 20px; 
+    width: 100%;
+    max-width: 400px;
 }
 
-button:hover {
-    background-color: #2980b9;
+/* Default Button Styling */
+.button-container button {
+    flex: 1;
+    max-width: 180px;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: transparent;
+    color: #000;
+    border: 1.5px solid #000;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Button Hover Effect */
+.button-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Special Case: Center Submit Button When No Captions Exist */
+.button-container.single-button {
+    justify-content: center; /* Forces button to center */
+}
+
+.button-container.single-button button {
+    max-width: 200px; /* Slightly larger when alone */
+}
+
+
+/* Caption Styling */
+#photo-caption {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Caveat', cursive;
+    font-size: 0.8em;
+    color: #666;
 }

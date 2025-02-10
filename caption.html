@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="caption.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Your Photos Are Ready!</h2>
+    <div class="main-wrapper">
+        <!-- Photos Container -->
+        <div class="photos-container">
+            <div id="photos">
+                <!-- Photos and caption will be inserted dynamically -->
+            </div>
+        </div>
 
-        <div class="content">
-            <!-- Photos Container (Left) -->
-            <div class="photos-container">
-                <div id="photos">
-                    <!-- Photos and caption will be inserted dynamically -->
+        <!-- Text & Caption Input Container -->
+        <div class="text-container">
+            <h2>caption time!</h2>
+            <p class="instructions">Add a short caption to personalize your photos! <br> Express yourself! What do these photos mean to you?</p>
+            
+            <!-- Caption Input + Submit Button -->
+            <div class="caption-box">
+                <textarea id="caption" placeholder="Write a short caption..."></textarea>
+                <div class="button-container"> 
+                    <button id="submitCaption">Submit Caption</button>
+                    <button id="downloadButton" style="display: none;">Download</button> <!-- Hidden initially -->
                 </div>
             </div>
-
-            <!-- Caption Input + Submit Button (Right Side) -->
-            <div class="caption-box">
-                <textarea id="caption" placeholder="Write a one-sentence caption..."></textarea>
-                <button id="submitCaption">Submit Caption</button>
-                <button id="downloadButton" style="display: none;">Download</button> <!-- Hidden initially -->
-            </div>
-
         </div>
     </div>
     

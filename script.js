@@ -114,6 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
             captionElement.id = "photo-caption";
             captionElement.textContent = savedCaption;
             photosContainer.appendChild(captionElement);
+
+            // Change button text if caption already exists
+            submitButton.textContent = "Submit New Caption";
+            downloadButton.style.display = "block"; // Show download button
         }
 
         // Handle caption submission
@@ -134,6 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 photosContainer.appendChild(captionElement);
 
                 document.getElementById('caption').value = "";
+
+                // Change button text after first submission
+                submitButton.textContent = "Submit New Caption";
                 downloadButton.style.display = "block"; // Show download button
             }
         });

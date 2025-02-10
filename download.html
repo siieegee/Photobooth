@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="download.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Download Your Photo</h2>
-        
-        <div class="content">
-            <!-- Photos Container (Left) -->
-            <div class="photos-container" id="photosContainer">
-                <div id="photos">
-                    <!-- Photos will be loaded dynamically -->
-                </div>
-                <p id="photo-caption"></p>
+    <div class="main-wrapper">
+        <!-- Photos Container (Left) -->
+        <div class="photos-container" id="photosContainer">
+            <div id="photos">
+                <!-- Photos will be loaded dynamically -->
             </div>
+            <p id="photo-caption"></p>
+        </div>
 
-            <!-- Download Button -->
-            <div class="download-box">
+        <!-- Text & Button Container (Right) -->
+        <div class="text-container">
+            <h2 class="header">your photos are ready to download!</h2>
+
+            <p class="instructions">Click the <b>Download</b> button to save your photo strip.<br> 
+                If you want to take another one, click <b>Home</b> to start over.</p>
+            
+            <!-- Button Container -->
+            <div class="button-container">
                 <button onclick="goHome()">Home</button>
                 <button id="downloadImage">Download</button>
             </div>
