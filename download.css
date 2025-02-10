@@ -17,12 +17,14 @@ body {
     display: flex;
     align-items: center;
     gap: 150px;
+    position: relative;
 }
 
 .container {
     background: white;
     padding: 20px;
     width: 600px;
+    height: 700px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -63,9 +65,37 @@ h2 {
     background-color: white;
     border: 2px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 540px;
-    width: 170px;
+    height: 432px;
+    width: 136px;
+    margin-top: 50px;
     overflow: hidden;
+    position: relative; 
+    animation: printPhoto 1s ease-in-out forwards; /* Smooth print effect */
+}
+
+@keyframes printPhoto {
+    from {
+        transform: translateY(-100%); /* Starts fully hidden inside the polaroid */
+        opacity: 0;
+    }
+    30% {
+        opacity: 1; /* Fades in slowly */
+    }
+    100% {
+        transform: translateY(0); /* Moves to normal position */
+        opacity: 1;
+    }
+}
+
+.polaroid-frame {
+    position: absolute;
+    top: -110px; /* Keeps it above the photo container */
+    left: -20px; /* Moves it further to the left */
+    width: 180px; /* Slightly larger than the photos-container */
+    height: auto;
+    z-index: 10; /* Ensures it appears on top */
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2)); /* Floating shadow effect */
+    transition: transform 0.3s ease-in-out;
 }
 
 h3 {
@@ -84,8 +114,8 @@ h3 {
 #photos img {
     width: 100%; 
     height: auto; 
-    max-width: 170px;
-    max-height: 150px;
+    max-width: 140px;
+    max-height: 120px;
     object-fit: cover; 
     border: 1px solid black;
 }

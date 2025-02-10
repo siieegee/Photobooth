@@ -8,6 +8,9 @@
 </head>
 <body>
     <div class="main-wrapper">
+        <!-- Polaroid Frame (Floating) -->
+        <img src="images/polaroid.png" alt="Polaroid Frame" class="polaroid-frame">
+    
         <!-- Photos Container (Left) -->
         <div class="photos-container" id="photosContainer">
             <div id="photos">
@@ -15,15 +18,13 @@
             </div>
             <p id="photo-caption"></p>
         </div>
-
+    
         <!-- Text & Button Container (Right) -->
         <div class="text-container">
             <h2 class="header">your photos are ready to download!</h2>
-
             <p class="instructions">click the <b>download</b> button to save your photo strip.<br> 
                 if you want to take another one, click <b>home</b> to start over.</p>
             
-            <!-- Button Container -->
             <div class="button-container">
                 <button onclick="goHome()">home</button>
                 <button id="downloadImage">download</button>
