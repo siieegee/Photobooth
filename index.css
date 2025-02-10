@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main wrapper to stack elements vertically */
+.main-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center align */
+    justify-content: center;
+    gap: 15px; /* Adds spacing between elements */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+h1 {
+    font-weight: 700; 
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Caption Styling */
+.caption {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: transparent; 
+    color: #000; 
+    border: 1.5px solid #000; 
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff; 
+}

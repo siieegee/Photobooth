@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photos Are Ready!</title>
+    <link rel="stylesheet" href="caption.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Photos Are Ready!</h2>
+
+        <div class="content">
+            <!-- Photos Container (Left) -->
+            <div class="photos-container">
+                <div id="photos">
+                    <!-- Photos and caption will be inserted dynamically -->
+                </div>
+            </div>
+
+            <!-- Caption Input + Submit Button (Right Side) -->
+            <div class="caption-box">
+                <textarea id="caption" placeholder="Write a one-sentence caption..."></textarea>
+                <button id="submitCaption">Submit Caption</button>
+                <button id="downloadButton" style="display: none;">Download</button> <!-- Hidden initially -->
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

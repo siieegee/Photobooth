@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Photo Container -->
+        <div class="photos-container">
+            <div id="photos">
+                <img src="images/photo1.jpeg" alt="Photo 1">
+                <img src="images/photo2.jpeg" alt="Photo 2">
+                <img src="images/photo3.jpeg" alt="Photo 3">
+            </div>
+            <p id="photo-caption">Capture the Moment, Anytime, Anywhere!</p>
+        </div>
+        
+        <!-- Welcome Container -->
+        <div class="container">
+            <h1>welcome</h1>
+
+            <div class="instructions">
+                <p>How It Works:</p>
+                <ul>
+                    <li> Click "START" to begin.</li>
+                    <li> The camera takes three shots, each with a 3-second timer.</li>
+                    <li> No retakes – make every pose count! </li>
+                    <li> Add a short, fun caption to your photo. </li>
+                    <li> Download and share your masterpiece! </li>
+                </ul>
+            </div>
+            
+            <!-- Separate div for spacing control -->
+            <div class="ready-text">
+                <p>Are you ready? Click the "START" button below!</p>
+            </div>
+            
+            <button onclick="startPhotobooth()">START</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

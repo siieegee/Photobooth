@@ -1,0 +1,110 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    gap: 20px; /* Adds space between the two containers */
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Photos Container (Styled to match the second layout) */
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 540px; 
+    width: 170px; 
+    overflow: hidden;
+}
+
+/* Photos Layout */
+#photos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Ensures images display properly */
+#photos img {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/* Caption Styling */
+#photo-caption {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    max-width: 90%;
+}
+
+/* Caption Input + Submit Button */
+.caption-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    resize: none;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

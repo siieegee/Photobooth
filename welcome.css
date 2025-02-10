@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for both sections */
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+/* Adjusted Photos Container */
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 540px;
+    width: 170px;
+    overflow: hidden;
+}
+
+/* Adjusted Welcome Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    font-weight: 700; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.instructions {
+    text-align: left;
+    font-size: 0.8em;
+    color: #666;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+.ready-text {
+    text-align: left;
+    font-size: 0.8em;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 10px; 
+}
+
+
+.instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.instructions li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: transparent;
+    color: #000;
+    border: 1.5px solid #000;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Photos Layout */
+#photos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Image Styling */
+#photos img {
+    width: 100%;
+    max-width: 170px;
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+#photo-caption {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Caveat', cursive;
+    font-size: 0.8em;
+    color: #666;
+}
