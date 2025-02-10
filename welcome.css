@@ -123,3 +123,22 @@ button:hover {
     font-size: 0.8em;
     color: #666;
 }
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: #333;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    color: #007bff;
+}
