@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('caption').value = "";
 
                 // Change button text after first submission
-                submitButton.textContent = "Submit New Caption";
+                submitButton.textContent = "submit new caption";
                 downloadButton.style.display = "block"; // Show download button
             }
         });
